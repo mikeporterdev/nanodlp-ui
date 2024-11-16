@@ -1021,8 +1021,8 @@ async function isCameraEnabled(src) {
 }
 
 async function buildCameraStream() {
-    const src = 'http://olymp.concepts3d.eu:13194/video.mp4';
-    // const src = `http://${window.location.hostname}:8081/video.mp4`;
+    // const src = 'http://olymp.concepts3d.eu:13194/video.mp4';
+    const src = `http://${window.location.hostname}:8081/video.mp4`;
     const cameraEnabled = await isCameraEnabled(src);
 
     if (cameraEnabled) {
