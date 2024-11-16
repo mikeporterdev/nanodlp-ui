@@ -245,6 +245,7 @@
 					{% endif %}
 					{% endif %}
 				  <li class="req-processed"><a href="/plate/cover/{{ row.PlateID }}"><span class="glyphicon glyphicon-plus"></span> &nbsp; <translate>Blackout</translate></a></li>
+				  <li class="req-processed"><a href="/static/plates/{{ row.PlateID }}/out.mp4"><span class="glyphicon glyphicon-camera"></span> &nbsp; View Latest Timelapse</a></li>
 				  {% if row.PlateID != status.PlateID or status.Printing == false %}
 				  <li>
 				  <a class="ask" href="/plate/delete/{{ row.PlateID }}" data-ask="delete-confirm"><span class="glyphicon glyphicon-trash"></span> &nbsp; <translate>Delete</translate>
